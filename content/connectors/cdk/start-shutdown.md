@@ -16,7 +16,7 @@ When you are ready, you can run `cdk deploy start` to run your connector in the 
 
 %copy first-line%
 ```bash
-$ cdk deploy start --config config-example.yaml 
+$ cdk deploy start --config config-sample.yaml 
 Log file: /private/tmp/my-connector/my-connector.log
 Connector runs with process id: 88589
 ```
@@ -40,7 +40,7 @@ In order to use [secrets]({{<ref "/connectors/secrets">}}), you can use the `--s
 
 %copy first-line%
 ```bash
-$ cdk deploy start --config config-example.yaml --secrets secrets.txt
+$ cdk deploy start --config config-sample.yaml --secrets secrets.txt
 ```
 
 In the secrets file, you should define a secret per line in the format `SECRET_NAME=SECRET_VALUE`.
